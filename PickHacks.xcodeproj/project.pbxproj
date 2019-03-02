@@ -12,9 +12,12 @@
 		7BEFF684222A7A4300CE2CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF682222A7A4300CE2CD6 /* Main.storyboard */; };
 		7BEFF686222A7A4400CE2CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */; };
 		7BEFF689222A7A4400CE2CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF687222A7A4400CE2CD6 /* LaunchScreen.storyboard */; };
+		8C2CB63C6B71DAAF5E4D2EB1 /* Pods_PickHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
+		6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		7BEFF67B222A7A4300CE2CD6 /* PickHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BEFF680222A7A4300CE2CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BEFF688222A7A4400CE2CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BEFF68A222A7A4400CE2CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2CB63C6B71DAAF5E4D2EB1 /* Pods_PickHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		666DA9D8ABC5EE406167C630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */,
+				678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7BEFF672222A7A4300CE2CD6 = {
 			isa = PBXGroup;
 			children = (
 				7BEFF67D222A7A4300CE2CD6 /* PickHacks */,
 				7BEFF67C222A7A4300CE2CD6 /* Products */,
+				666DA9D8ABC5EE406167C630 /* Pods */,
+				C21FA3BB86DC23599CB43EBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = PickHacks;
 			sourceTree = "<group>";
 		};
+		C21FA3BB86DC23599CB43EBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BEFF68D222A7A4400CE2CD6 /* Build configuration list for PBXNativeTarget "PickHacks" */;
 			buildPhases = (
+				2C8CD4E06471E5638D745757 /* [CP] Check Pods Manifest.lock */,
 				7BEFF677222A7A4300CE2CD6 /* Sources */,
 				7BEFF678222A7A4300CE2CD6 /* Frameworks */,
 				7BEFF679222A7A4300CE2CD6 /* Resources */,
+				CEADFE5A7A0C3C0E0EFFA75D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C8CD4E06471E5638D745757 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickHacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEADFE5A7A0C3C0E0EFFA75D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BEFF677222A7A4300CE2CD6 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		7BEFF68E222A7A4400CE2CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		7BEFF68F222A7A4400CE2CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
