@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		765143B5A4FAA671782F0BFA /* libPods-PickHacks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A356B085133D77880DAEC35 /* libPods-PickHacks.a */; };
+		7B6A4E4C222B07A300B6F8DA /* ActivityMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E4B222B07A300B6F8DA /* ActivityMapViewController.swift */; };
+		7B6A4E51222B0DCE00B6F8DA /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */; };
 		7BEFF67F222A7A4300CE2CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */; };
-		7BEFF681222A7A4300CE2CD6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFF680222A7A4300CE2CD6 /* MapViewController.swift */; };
 		7BEFF684222A7A4300CE2CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF682222A7A4300CE2CD6 /* Main.storyboard */; };
 		7BEFF686222A7A4400CE2CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */; };
 		7BEFF689222A7A4400CE2CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF687222A7A4400CE2CD6 /* LaunchScreen.storyboard */; };
-		8C2CB63C6B71DAAF5E4D2EB1 /* Pods_PickHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
+		6A356B085133D77880DAEC35 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		7B6A4E4B222B07A300B6F8DA /* ActivityMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMapViewController.swift; sourceTree = "<group>"; };
+		7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		7BEFF67B222A7A4300CE2CD6 /* PickHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BEFF680222A7A4300CE2CD6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7BEFF683222A7A4300CE2CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BEFF688222A7A4400CE2CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BEFF68A222A7A4400CE2CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2CB63C6B71DAAF5E4D2EB1 /* Pods_PickHacks.framework in Frameworks */,
+				765143B5A4FAA671782F0BFA /* libPods-PickHacks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +49,23 @@
 				678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B6A4E4D222B0C7000B6F8DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B6A4E4F222B0DA500B6F8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B6A4E4B222B07A300B6F8DA /* ActivityMapViewController.swift */,
+				7BEFF682222A7A4300CE2CD6 /* Main.storyboard */,
+				7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7BEFF672222A7A4300CE2CD6 = {
@@ -70,9 +89,9 @@
 		7BEFF67D222A7A4300CE2CD6 /* PickHacks */ = {
 			isa = PBXGroup;
 			children = (
+				7B6A4E4F222B0DA500B6F8DA /* View */,
+				7B6A4E4D222B0C7000B6F8DA /* Model */,
 				7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */,
-				7BEFF680222A7A4300CE2CD6 /* MapViewController.swift */,
-				7BEFF682222A7A4300CE2CD6 /* Main.storyboard */,
 				7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */,
 				7BEFF687222A7A4400CE2CD6 /* LaunchScreen.storyboard */,
 				7BEFF68A222A7A4400CE2CD6 /* Info.plist */,
@@ -83,7 +102,7 @@
 		C21FA3BB86DC23599CB43EBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B83DD43206B2871DED901BAF /* Pods_PickHacks.framework */,
+				6A356B085133D77880DAEC35 /* libPods-PickHacks.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,6 +119,7 @@
 				7BEFF678222A7A4300CE2CD6 /* Frameworks */,
 				7BEFF679222A7A4300CE2CD6 /* Resources */,
 				CEADFE5A7A0C3C0E0EFFA75D /* [CP] Copy Pods Resources */,
+				C1A71B472D2E83EBEADBADAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +199,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C1A71B472D2E83EBEADBADAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CEADFE5A7A0C3C0E0EFFA75D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEFF681222A7A4300CE2CD6 /* MapViewController.swift in Sources */,
+				7B6A4E51222B0DCE00B6F8DA /* SnapViewController.swift in Sources */,
+				7B6A4E4C222B07A300B6F8DA /* ActivityMapViewController.swift in Sources */,
 				7BEFF67F222A7A4300CE2CD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

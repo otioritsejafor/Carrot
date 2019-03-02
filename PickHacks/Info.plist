@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1Ijoib3Rpb3JpdHNlamFmb3IiLCJhIjoiY2pxam9nMnM5NmRyMjQzcGRhZGhzcTh5YSJ9.ZgsnnbhE7tTbKgZ8gb-f_w</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.Magloboid.PickHacks</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -34,6 +38,19 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Information Property List</key>
+	<dict>
+		<key>LSApplicationQueriesSchemes</key>
+		<array/>
+		<key>googlechromes</key>
+		<string></string>
+		<key>comgooglemaps</key>
+		<string></string>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To get and update Map data</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To get and update map data</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -6,20 +6,24 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - Mapbox-iOS-SDK (4.9.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - Mapbox-iOS-SDK (~> 4.9)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GoogleMaps
     - GooglePlaces
+    - Mapbox-iOS-SDK
 
 SPEC CHECKSUMS:
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  Mapbox-iOS-SDK: 225036950837cbe408e6b333e51cd6001c122499
 
-PODFILE CHECKSUM: c1fc7b537b555727874674f01b8258f1315af8d7
+PODFILE CHECKSUM: d3dda3d0f7cf463778f6545755c78fc2dbdd3daf
 
 COCOAPODS: 1.5.3

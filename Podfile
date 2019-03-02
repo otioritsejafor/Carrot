@@ -1,12 +1,13 @@
 platform :ios, '12.0'
 
 target 'PickHacks' do
-  
-  use_frameworks!
 
   # Google APIs
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+
+  # MapBox API
+  pod 'Mapbox-iOS-SDK', '~> 4.9'
 
   # Snapkit 
 
