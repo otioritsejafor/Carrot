@@ -7,30 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7F3BD568CC23E6F7F09D1D7306A94F7 /* Pods-PickHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C9DA42EAC5C248324EFB640F07C7BD /* Pods-PickHacks-dummy.m */; };
+		250E54634F3F6566E09012FFEC8A8C88 /* MBPlacemarkScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */; };
+		312D60D85719A1F94674D74AD2CC5BBE /* MapboxGeocoder.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		347DDD7D1E8C2F3626AB767488F82177 /* MBGeocodeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */; };
+		37103CA9692C77A8CE1D31D0A29ED0D2 /* MBGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */; };
+		5254997080BC1DCB94998F46AF231BDA /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */; };
+		5D7E7E31E7305EC30E34A33BF4236C26 /* MapboxGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70094DD8CC4B0B656B7F95E8DB5B8BDA /* Pods-PickHacks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7122E2D5B0662A8318A450A96B52F1AF /* MBPlacemarkScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD76F327C1ACC72A81EB9E708C0CDB22 /* MBRectangularRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */; };
+		C173517257EA02834B446F5838790E1D /* MapboxGeocoder.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */; };
+		C225132A6CF8B1E963A3850DB66C0B00 /* MBPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */; };
+		FF5B2F74C4CFB337DF063495CF73894F /* Pods-PickHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F26C7794E0887EC61AD0394E85BA4B58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8C24EFEC268A9EC7EC44A8B76AF92E;
+			remoteInfo = MapboxGeocoder.swift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		139CC43529865BDC4314395648344E04 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
-		17C276A01E4EFAA4B22E798823989AC8 /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
-		362487819530AA1B1DB1D01BEE2F50C2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		387ADDA7267042F3EEAECE0D93B580AE /* Pods-PickHacks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-resources.sh"; sourceTree = "<group>"; };
-		4A1F36C204EFC995114833C90B655C82 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		58FD81A021D48E4D035CCFD876A42D26 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PickHacks.a"; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A37F869801ABA90707637B8A15C3355 /* Pods-PickHacks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-frameworks.sh"; sourceTree = "<group>"; };
-		62659D08EBF0F2A5283A235EE126C92E /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		69B35193A54187E7A8E3B8B99C41C892 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		0343F9238AC90984D6B8D1D9CCF1EEDD /* Pods-PickHacks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PickHacks-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocoder.swift; path = MapboxGeocoder/MBGeocoder.swift; sourceTree = "<group>"; };
+		20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxGeocoder.h; path = MapboxGeocoder/MapboxGeocoder.h; sourceTree = "<group>"; };
+		2333E92401F9A40B9644D799E1EDFDF0 /* MapboxGeocoder.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGeocoder.swift-prefix.pch"; sourceTree = "<group>"; };
+		2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PickHacks-dummy.m"; sourceTree = "<group>"; };
+		3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MapboxGeocoder.swift-umbrella.h"; path = "../../Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h"; sourceTree = "<group>"; };
+		43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRectangularRegion.swift; path = MapboxGeocoder/MBRectangularRegion.swift; sourceTree = "<group>"; };
+		52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemarkScope.swift; path = MapboxGeocoder/MBPlacemarkScope.swift; sourceTree = "<group>"; };
+		5D58BE87A9AE8E43A6201E0DA25A1660 /* Pods-PickHacks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PickHacks-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxGeocoder.swift.xcconfig; sourceTree = "<group>"; };
+		7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPlacemarkScope.h; path = MapboxGeocoder/MBPlacemarkScope.h; sourceTree = "<group>"; };
+		81420AF8D51F81EFCF06634CC714C167 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocodeOptions.swift; path = MapboxGeocoder/MBGeocodeOptions.swift; sourceTree = "<group>"; };
+		891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PickHacks.a"; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E07EC66243B7DE25C992BBEC5456919 /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
-		AB69A43AD99FC56BD775456648EF00E7 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		D7C9DA42EAC5C248324EFB640F07C7BD /* Pods-PickHacks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PickHacks-dummy.m"; sourceTree = "<group>"; };
-		E98E7C18EFAAD5AF98CFD893E3A8217D /* Pods-PickHacks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PickHacks-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA723ADF0DA3D399B00140ECFF334C73 /* Pods-PickHacks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PickHacks-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F6874D140EE92A824E2E382ADBA2E078 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		9C47648D593AB0133A07DC4BCD16D7BC /* Pods-PickHacks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-frameworks.sh"; sourceTree = "<group>"; };
+		A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PickHacks-umbrella.h"; sourceTree = "<group>"; };
+		B41E4754C42F78A0E29C4440879AFFB2 /* Pods-PickHacks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PickHacks.modulemap"; sourceTree = "<group>"; };
+		C22E98E60D61F58488C8DEA5D0A9A72C /* MapboxGeocoder.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = MapboxGeocoder.swift.modulemap; path = ../../Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap; sourceTree = "<group>"; };
+		CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemark.swift; path = MapboxGeocoder/MBPlacemark.swift; sourceTree = "<group>"; };
+		CE6F5357F779E6D0525D7C4283B70BEF /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
+		CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxGeocoder.swift-dummy.m"; sourceTree = "<group>"; };
+		CFD5E7FDB898BB07A50DC437E299E89F /* Pods-PickHacks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-resources.sh"; sourceTree = "<group>"; };
+		D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMapboxGeocoder.swift.a; path = libMapboxGeocoder.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreLocation.swift; path = MapboxGeocoder/CoreLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37911DA8664217E05E2CEF268307731F /* Frameworks */ = {
+		7B8950DD4F56CB0C2B1F1BA13D1864D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D435BE14003AC5BCE476EB09B86CC542 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,14 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00246797A43566743B23370909A21F50 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				362487819530AA1B1DB1D01BEE2F50C2 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,70 +85,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		148DEB48457B470C019E1F0109D557DF /* GoogleMaps */ = {
+		1660ABA0344BBF726E7377EBF57BF74C /* Pods-PickHacks */ = {
 			isa = PBXGroup;
 			children = (
-				4ADD1071C0D679481FA9C81BF74418A3 /* Base */,
-				C451D9E2157DFDF1F704462EC7BD8A1C /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		4ADD1071C0D679481FA9C81BF74418A3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				656339CF5BABAC4B3D6C80E3B09044F7 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		4EB87B316C282771F25453A1B4E010CB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A1F36C204EFC995114833C90B655C82 /* GoogleMaps.framework */,
-				69B35193A54187E7A8E3B8B99C41C892 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		50CBCEA32E70A4F1447F08CE75EEE492 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				58FD81A021D48E4D035CCFD876A42D26 /* libPods-PickHacks.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5D45402534F42A889508157386BA3895 /* Pods-PickHacks */ = {
-			isa = PBXGroup;
-			children = (
-				EA723ADF0DA3D399B00140ECFF334C73 /* Pods-PickHacks-acknowledgements.markdown */,
-				E98E7C18EFAAD5AF98CFD893E3A8217D /* Pods-PickHacks-acknowledgements.plist */,
-				D7C9DA42EAC5C248324EFB640F07C7BD /* Pods-PickHacks-dummy.m */,
-				5A37F869801ABA90707637B8A15C3355 /* Pods-PickHacks-frameworks.sh */,
-				387ADDA7267042F3EEAECE0D93B580AE /* Pods-PickHacks-resources.sh */,
-				17C276A01E4EFAA4B22E798823989AC8 /* Pods-PickHacks.debug.xcconfig */,
-				9E07EC66243B7DE25C992BBEC5456919 /* Pods-PickHacks.release.xcconfig */,
+				B41E4754C42F78A0E29C4440879AFFB2 /* Pods-PickHacks.modulemap */,
+				0343F9238AC90984D6B8D1D9CCF1EEDD /* Pods-PickHacks-acknowledgements.markdown */,
+				5D58BE87A9AE8E43A6201E0DA25A1660 /* Pods-PickHacks-acknowledgements.plist */,
+				2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */,
+				9C47648D593AB0133A07DC4BCD16D7BC /* Pods-PickHacks-frameworks.sh */,
+				CFD5E7FDB898BB07A50DC437E299E89F /* Pods-PickHacks-resources.sh */,
+				A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */,
+				82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */,
+				CE6F5357F779E6D0525D7C4283B70BEF /* Pods-PickHacks.release.xcconfig */,
 			);
 			name = "Pods-PickHacks";
 			path = "Target Support Files/Pods-PickHacks";
 			sourceTree = "<group>";
 		};
-		656339CF5BABAC4B3D6C80E3B09044F7 /* Frameworks */ = {
+		186746AFED65C595083281FE1299BEFF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F6874D140EE92A824E2E382ADBA2E078 /* GoogleMapsBase.framework */,
+				C22E98E60D61F58488C8DEA5D0A9A72C /* MapboxGeocoder.swift.modulemap */,
+				6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */,
+				CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */,
+				2333E92401F9A40B9644D799E1EDFDF0 /* MapboxGeocoder.swift-prefix.pch */,
+				3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/MapboxGeocoder.swift";
 			sourceTree = "<group>";
 		};
-		6AFA7088D807A2C871AE9F9BF15D89FE /* Targets Support Files */ = {
+		2EA4E781ACE54FCE8D5BC6118301F4B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D45402534F42A889508157386BA3895 /* Pods-PickHacks */,
+				B3A113A082E69A40427B7B476CDE041C /* Mapbox-iOS-SDK */,
+				9C920220DFF8C4F5CD1604335D692C31 /* MapboxGeocoder.swift */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -126,102 +129,121 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				F0FFB30F6CD41F4181C9F9B5E98404E7 /* Pods */,
-				50CBCEA32E70A4F1447F08CE75EEE492 /* Products */,
-				6AFA7088D807A2C871AE9F9BF15D89FE /* Targets Support Files */,
+				2EA4E781ACE54FCE8D5BC6118301F4B6 /* Pods */,
+				A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */,
+				AB3BC51D32A85FADDFD184C5475CDD77 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		C451D9E2157DFDF1F704462EC7BD8A1C /* Maps */ = {
+		9C920220DFF8C4F5CD1604335D692C31 /* MapboxGeocoder.swift */ = {
 			isa = PBXGroup;
 			children = (
-				4EB87B316C282771F25453A1B4E010CB /* Frameworks */,
-				00246797A43566743B23370909A21F50 /* Resources */,
+				D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */,
+				20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */,
+				858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */,
+				0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */,
+				CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */,
+				7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */,
+				52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */,
+				43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */,
+				186746AFED65C595083281FE1299BEFF /* Support Files */,
 			);
-			name = Maps;
+			name = MapboxGeocoder.swift;
+			path = MapboxGeocoder.swift;
 			sourceTree = "<group>";
 		};
-		D119A0C6C0BAC292B1B451DC632C63AC /* Resources */ = {
+		9F9591DD09FDF0547625DCD49DA89C95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB69A43AD99FC56BD775456648EF00E7 /* GooglePlaces.bundle */,
+				81420AF8D51F81EFCF06634CC714C167 /* Mapbox.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7A70B559780392C9FBACDFA2C3926D4 /* Mapbox-iOS-SDK */ = {
+		A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3A566C51219AF8208ED925C565B6EC1 /* Frameworks */,
+				D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */,
+				891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3BC51D32A85FADDFD184C5475CDD77 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1660ABA0344BBF726E7377EBF57BF74C /* Pods-PickHacks */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B3A113A082E69A40427B7B476CDE041C /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9F9591DD09FDF0547625DCD49DA89C95 /* Frameworks */,
 			);
 			name = "Mapbox-iOS-SDK";
 			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		EA7283E36F770511BE5805DB2148F637 /* GooglePlaces */ = {
-			isa = PBXGroup;
-			children = (
-				F29C501FD58AA4363A94CEA9F4C45057 /* Frameworks */,
-				D119A0C6C0BAC292B1B451DC632C63AC /* Resources */,
-			);
-			name = GooglePlaces;
-			path = GooglePlaces;
-			sourceTree = "<group>";
-		};
-		F0FFB30F6CD41F4181C9F9B5E98404E7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				148DEB48457B470C019E1F0109D557DF /* GoogleMaps */,
-				EA7283E36F770511BE5805DB2148F637 /* GooglePlaces */,
-				D7A70B559780392C9FBACDFA2C3926D4 /* Mapbox-iOS-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F29C501FD58AA4363A94CEA9F4C45057 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				62659D08EBF0F2A5283A235EE126C92E /* GooglePlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3A566C51219AF8208ED925C565B6EC1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				139CC43529865BDC4314395648344E04 /* Mapbox.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43FFA70DC92109F303C5EEC7D4319DBE /* Headers */ = {
+		C1D7844E45DD8D4DE22E8535947D9462 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70094DD8CC4B0B656B7F95E8DB5B8BDA /* Pods-PickHacks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2825C5E79271E7B4D005AEE84005DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7E7E31E7305EC30E34A33BF4236C26 /* MapboxGeocoder.h in Headers */,
+				312D60D85719A1F94674D74AD2CC5BBE /* MapboxGeocoder.swift-umbrella.h in Headers */,
+				7122E2D5B0662A8318A450A96B52F1AF /* MBPlacemarkScope.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		66B6CDDE116B87B623BABDB66B102682 /* Pods-PickHacks */ = {
+		0DDCA30DA2FC32702AECC93B4E1780E1 /* Pods-PickHacks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3F6DC5E12392CBC3820BFBA005D0848 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */;
+			buildConfigurationList = 5DB89C815B547E4989608B3466FEAB11 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */;
 			buildPhases = (
-				43FFA70DC92109F303C5EEC7D4319DBE /* Headers */,
-				C8A5C790D7783AC071503DAA62A958AE /* Sources */,
-				37911DA8664217E05E2CEF268307731F /* Frameworks */,
+				C1D7844E45DD8D4DE22E8535947D9462 /* Headers */,
+				23B3E0DAE5038EB9457C7F0214B40A75 /* Sources */,
+				7B8950DD4F56CB0C2B1F1BA13D1864D5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50FC24BCE33CAFE8531594B0FBBD3A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-PickHacks";
+			productName = "Pods-PickHacks";
+			productReference = 891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2629371EC72B3678E4842FCF6414C106 /* Build configuration list for PBXNativeTarget "MapboxGeocoder.swift" */;
+			buildPhases = (
+				DC2825C5E79271E7B4D005AEE84005DC /* Headers */,
+				5669F20618730AC9FD7F5B0F53B19F20 /* Sources */,
+				D435BE14003AC5BCE476EB09B86CC542 /* Frameworks */,
+				559664FD99FB4A8AFBAD5BAD39294C3D /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-PickHacks";
-			productName = "Pods-PickHacks";
-			productReference = 58FD81A021D48E4D035CCFD876A42D26 /* libPods-PickHacks.a */;
+			name = MapboxGeocoder.swift;
+			productName = MapboxGeocoder.swift;
+			productReference = D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -241,30 +263,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 50CBCEA32E70A4F1447F08CE75EEE492 /* Products */;
+			productRefGroup = A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66B6CDDE116B87B623BABDB66B102682 /* Pods-PickHacks */,
+				DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */,
+				0DDCA30DA2FC32702AECC93B4E1780E1 /* Pods-PickHacks */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		559664FD99FB4A8AFBAD5BAD39294C3D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		C8A5C790D7783AC071503DAA62A958AE /* Sources */ = {
+		23B3E0DAE5038EB9457C7F0214B40A75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F3BD568CC23E6F7F09D1D7306A94F7 /* Pods-PickHacks-dummy.m in Sources */,
+				FF5B2F74C4CFB337DF063495CF73894F /* Pods-PickHacks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5669F20618730AC9FD7F5B0F53B19F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5254997080BC1DCB94998F46AF231BDA /* CoreLocation.swift in Sources */,
+				C173517257EA02834B446F5838790E1D /* MapboxGeocoder.swift-dummy.m in Sources */,
+				347DDD7D1E8C2F3626AB767488F82177 /* MBGeocodeOptions.swift in Sources */,
+				37103CA9692C77A8CE1D31D0A29ED0D2 /* MBGeocoder.swift in Sources */,
+				C225132A6CF8B1E963A3850DB66C0B00 /* MBPlacemark.swift in Sources */,
+				250E54634F3F6566E09012FFEC8A8C88 /* MBPlacemarkScope.swift in Sources */,
+				AD76F327C1ACC72A81EB9E708C0CDB22 /* MBRectangularRegion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F50FC24BCE33CAFE8531594B0FBBD3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapboxGeocoder.swift;
+			target = DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */;
+			targetProxy = F26C7794E0887EC61AD0394E85BA4B58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		2918BF3FE0C3B7B5BCC9B4AEF900C954 /* Debug */ = {
+		18858F35143D198F17E4651DB76E3C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17C276A01E4EFAA4B22E798823989AC8 /* Pods-PickHacks.debug.xcconfig */;
+			baseConfigurationReference = 82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -274,12 +348,88 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PickHacks/Pods-PickHacks.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37662CC4E9FF05999BA8D9423A4A3EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6F5357F779E6D0525D7C4283B70BEF /* Pods-PickHacks.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PickHacks/Pods-PickHacks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FAA02948016E61CD85169CD97D5AAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxGeocoder.swift/MapboxGeocoder.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MapboxGeocoder;
+				PRODUCT_NAME = MapboxGeocoder.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		859DAE0B311F45EF1751ECF3DA76C252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxGeocoder.swift/MapboxGeocoder.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MapboxGeocoder;
+				PRODUCT_NAME = MapboxGeocoder.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -412,32 +562,18 @@
 			};
 			name = Release;
 		};
-		D3EAEE35AE441535D63F7997604F9AA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E07EC66243B7DE25C992BBEC5456919 /* Pods-PickHacks.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2629371EC72B3678E4842FCF6414C106 /* Build configuration list for PBXNativeTarget "MapboxGeocoder.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859DAE0B311F45EF1751ECF3DA76C252 /* Debug */,
+				7FAA02948016E61CD85169CD97D5AAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -447,11 +583,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3F6DC5E12392CBC3820BFBA005D0848 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */ = {
+		5DB89C815B547E4989608B3466FEAB11 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2918BF3FE0C3B7B5BCC9B4AEF900C954 /* Debug */,
-				D3EAEE35AE441535D63F7997604F9AA6 /* Release */,
+				18858F35143D198F17E4651DB76E3C14 /* Debug */,
+				37662CC4E9FF05999BA8D9423A4A3EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

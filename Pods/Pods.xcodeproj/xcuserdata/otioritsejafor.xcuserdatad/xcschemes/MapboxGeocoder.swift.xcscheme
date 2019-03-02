@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0DDCA30DA2FC32702AECC93B4E1780E1"
-               BlueprintName = "Pods-PickHacks"
+               BlueprintIdentifier = "DA8C24EFEC268A9EC7EC44A8B76AF92E"
+               BlueprintName = "MapboxGeocoder.swift"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-PickHacks.a">
+               BuildableName = "libMapboxGeocoder.swift.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
