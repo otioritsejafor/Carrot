@@ -8,6 +8,7 @@
 
 import Foundation
 
+import MapboxGeocoder
 import Mapbox
 
 class ActivityMapViewController: UIViewController {
@@ -15,6 +16,8 @@ class ActivityMapViewController: UIViewController {
     let locationManager = CLLocationManager()
     var coordinates = CLLocationCoordinate2D()
     var mapView: MGLMapView!
+    var places: Places!
+    var activity: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,7 @@ class ActivityMapViewController: UIViewController {
         current_loc.title = "You"
         
         
+        
         let url = URL(string: "mapbox://styles/mapbox/streets-v11")
         mapView = MGLMapView(frame: view.bounds, styleURL: url)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -48,10 +52,17 @@ class ActivityMapViewController: UIViewController {
         let st_coord = CLLocationCoordinate2D(latitude: 37.95146, longitude: -91.770519)
         let lion_coord = CLLocationCoordinate2D(latitude: 37.929820, longitude: -91.739820)
         
-        addAnnotation(coord: st_coord, location: "Missouri S&T Soccer Field rolla", time: "5:00 - 6:00 PM")
-        addAnnotation(coord: lion_coord, location: "Lion Club Soccer Complex", time: "4:00 - 5:30 PM")
+//        addAnnotation(coord: st_coord, location: "Missouri S&T Soccer Field rolla", time: "5:00 - 6:00 PM")
+//        addAnnotation(coord: lion_coord, location: "Lion Club Soccer Complex", time: "4:00 - 5:30 PM")
+        
+        
         
         view.addSubview(mapView)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getPlaces()
+        
     }
     
     func addAnnotation(coord: CLLocationCoordinate2D, location: String, time: String) {
@@ -63,12 +74,50 @@ class ActivityMapViewController: UIViewController {
         mapView.addAnnotation(annotation)
         
     }
+    
+    func addAnnotation(coord: [Double], location: String, time: String) {
+        let annotation = MGLPointAnnotation()
+        let long = coord[0]
+        let lat = coord[1]
+        let next = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        annotation.coordinate = next
+        annotation.title = location
+        annotation.subtitle = time
+        
+        mapView.addAnnotation(annotation)
+        
+        print(annotation.coordinate)
+        
+    }
+    
+    @IBAction func back(_ Sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func getPlaces() {
+        MapBoxClient.getActivityPlaces(activity: activity, long: coordinates.longitude, lat: coordinates.latitude) { (result, error) in
+            self.places = result
+            print(self.places.features[0].geometry.coordinates)
+//            self.addAnnotation(coord: self.places.features[0].geometry.coordinates, location: self.places.features[0].placeName, time: "5:00 - 6:00 PM")
+            
+            for place in self.places.features {
+                self.addAnnotation(coord: place.geometry.coordinates, location: place.text, time: "5:00 - 6:00 PM")
+            }
+        }
+        
+       
+        
+//        MapBoxClient.getBBall(long: coordinates.longitude, lat: coordinates.latitude) { (result, error) in
+//            self.places = result
+//            print(self.places[0])
+//        }
+    }
 }
 
 extension ActivityMapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 }
 
@@ -76,17 +125,7 @@ extension ActivityMapViewController: MGLMapViewDelegate {
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
     }
-    
-//    func mapView(_ mapView: MGLMapView, leftCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
-//
-//            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 60, height: 50))
-//            label.textAlignment = .right
-//            label.textColor = UIColor(red: 0.81, green: 0.71, blue: 0.23, alpha: 1)
-//            //label.text = "金閣寺"
-//
-//            return label
-//
-//    }
+
     
     func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
         return UIButton(type: .detailDisclosure)

@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		765143B5A4FAA671782F0BFA /* libPods-PickHacks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A356B085133D77880DAEC35 /* libPods-PickHacks.a */; };
 		7B400E0B222B4C4400CD2C9D /* ActivitySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B400E0A222B4C4400CD2C9D /* ActivitySelectViewController.swift */; };
+		7B400E0D222B65EB00CD2C9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B400E0C222B65EB00CD2C9D /* GoogleService-Info.plist */; };
 		7B6A4E4C222B07A300B6F8DA /* ActivityMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E4B222B07A300B6F8DA /* ActivityMapViewController.swift */; };
 		7B6A4E51222B0DCE00B6F8DA /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */; };
-		7B6A4E55222B229100B6F8DA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E54222B229100B6F8DA /* Place.swift */; };
+		7B6A4E55222B229100B6F8DA /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4E54222B229100B6F8DA /* Places.swift */; };
+		7BD07168222BB574009BB0D2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD07167222BB574009BB0D2 /* Login.storyboard */; };
+		7BD69EC4222B81BB0005A282 /* MapBoxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD69EC3222B81BB0005A282 /* MapBoxClient.swift */; };
+		7BD69EC6222B81DF0005A282 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD69EC5222B81DF0005A282 /* Client.swift */; };
 		7BEFF67F222A7A4300CE2CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */; };
 		7BEFF684222A7A4300CE2CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF682222A7A4300CE2CD6 /* Main.storyboard */; };
 		7BEFF686222A7A4400CE2CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */; };
@@ -23,9 +27,13 @@
 		6A356B085133D77880DAEC35 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		7B400E0A222B4C4400CD2C9D /* ActivitySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectViewController.swift; sourceTree = "<group>"; };
+		7B400E0C222B65EB00CD2C9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B6A4E4B222B07A300B6F8DA /* ActivityMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMapViewController.swift; sourceTree = "<group>"; };
 		7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
-		7B6A4E54222B229100B6F8DA /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7B6A4E54222B229100B6F8DA /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		7BD07167222BB574009BB0D2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7BD69EC3222B81BB0005A282 /* MapBoxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxClient.swift; sourceTree = "<group>"; };
+		7BD69EC5222B81DF0005A282 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		7BEFF67B222A7A4300CE2CD6 /* PickHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BEFF683222A7A4300CE2CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 		7B6A4E4D222B0C7000B6F8DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7BD69EC2222B81A50005A282 /* Client */,
 				7B6A4E52222B21FD00B6F8DA /* Responses */,
 			);
 			path = Model;
@@ -70,6 +79,7 @@
 				7BEFF682222A7A4300CE2CD6 /* Main.storyboard */,
 				7B6A4E50222B0DCE00B6F8DA /* SnapViewController.swift */,
 				7B400E0A222B4C4400CD2C9D /* ActivitySelectViewController.swift */,
+				7BD07167222BB574009BB0D2 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,9 +95,18 @@
 		7B6A4E53222B225F00B6F8DA /* MapBox */ = {
 			isa = PBXGroup;
 			children = (
-				7B6A4E54222B229100B6F8DA /* Place.swift */,
+				7B6A4E54222B229100B6F8DA /* Places.swift */,
 			);
 			path = MapBox;
+			sourceTree = "<group>";
+		};
+		7BD69EC2222B81A50005A282 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7BD69EC3222B81BB0005A282 /* MapBoxClient.swift */,
+				7BD69EC5222B81DF0005A282 /* Client.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		7BEFF672222A7A4300CE2CD6 = {
@@ -116,6 +135,7 @@
 				7BEFF67E222A7A4300CE2CD6 /* AppDelegate.swift */,
 				7BEFF685222A7A4400CE2CD6 /* Assets.xcassets */,
 				7BEFF687222A7A4400CE2CD6 /* LaunchScreen.storyboard */,
+				7B400E0C222B65EB00CD2C9D /* GoogleService-Info.plist */,
 				7BEFF68A222A7A4400CE2CD6 /* Info.plist */,
 			);
 			path = PickHacks;
@@ -141,6 +161,7 @@
 				7BEFF678222A7A4300CE2CD6 /* Frameworks */,
 				7BEFF679222A7A4300CE2CD6 /* Resources */,
 				C1A71B472D2E83EBEADBADAE /* [CP] Embed Pods Frameworks */,
+				D01E5C8C2FF8EE4DAA40F67E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BEFF689222A7A4400CE2CD6 /* LaunchScreen.storyboard in Resources */,
+				7B400E0D222B65EB00CD2C9D /* GoogleService-Info.plist in Resources */,
 				7BEFF686222A7A4400CE2CD6 /* Assets.xcassets in Resources */,
+				7BD07168222BB574009BB0D2 /* Login.storyboard in Resources */,
 				7BEFF684222A7A4300CE2CD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +267,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D01E5C8C2FF8EE4DAA40F67E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,10 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B400E0B222B4C4400CD2C9D /* ActivitySelectViewController.swift in Sources */,
+				7BD69EC6222B81DF0005A282 /* Client.swift in Sources */,
 				7B6A4E51222B0DCE00B6F8DA /* SnapViewController.swift in Sources */,
 				7B6A4E4C222B07A300B6F8DA /* ActivityMapViewController.swift in Sources */,
+				7BD69EC4222B81BB0005A282 /* MapBoxClient.swift in Sources */,
 				7BEFF67F222A7A4300CE2CD6 /* AppDelegate.swift in Sources */,
-				7B6A4E55222B229100B6F8DA /* Place.swift in Sources */,
+				7B6A4E55222B229100B6F8DA /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
