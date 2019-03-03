@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		541A24C5222B89AF008E1543 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A24C4222B89AF008E1543 /* LoginViewController.swift */; };
+		548D4913222BE765004A351F /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548D4912222BE765004A351F /* CategoriesViewController.swift */; };
 		765143B5A4FAA671782F0BFA /* libPods-PickHacks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A356B085133D77880DAEC35 /* libPods-PickHacks.a */; };
 		7B400E0B222B4C4400CD2C9D /* ActivitySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B400E0A222B4C4400CD2C9D /* ActivitySelectViewController.swift */; };
 		7B400E0D222B65EB00CD2C9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B400E0C222B65EB00CD2C9D /* GoogleService-Info.plist */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		541A24C4222B89AF008E1543 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		548D4912222BE765004A351F /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		678AEB577E3BD194D8BBABBA /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
 		6A356B085133D77880DAEC35 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3378AC270F4F8370D6844C /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickHacks/Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				7B400E0A222B4C4400CD2C9D /* ActivitySelectViewController.swift */,
 				7BD07167222BB574009BB0D2 /* Login.storyboard */,
 				541A24C4222B89AF008E1543 /* LoginViewController.swift */,
+				548D4912222BE765004A351F /* CategoriesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B400E0B222B4C4400CD2C9D /* ActivitySelectViewController.swift in Sources */,
+				548D4913222BE765004A351F /* CategoriesViewController.swift in Sources */,
 				7BD69EC6222B81DF0005A282 /* Client.swift in Sources */,
 				541A24C5222B89AF008E1543 /* LoginViewController.swift in Sources */,
 				7B6A4E51222B0DCE00B6F8DA /* SnapViewController.swift in Sources */,

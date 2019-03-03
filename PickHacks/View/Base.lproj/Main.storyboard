@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Event-->
         <scene sceneID="0ec-RK-VaD">
             <objects>
                 <viewController id="6r1-Hp-el0" customClass="SnapViewController" customModule="PickHacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,8 +64,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#soccer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlL-Mb-IDc">
-                                        <rect key="frame" x="20" y="121.5" width="62.5" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#soccer⚽️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlL-Mb-IDc">
+                                        <rect key="frame" x="20" y="121.5" width="85.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -83,6 +83,14 @@
                                     <constraint firstAttribute="bottom" secondItem="22D-6c-QhM" secondAttribute="bottom" constant="52.5" id="pLK-am-PgO"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoP-hI-Yey">
+                                <rect key="frame" x="164" y="461" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Listing"/>
+                                <connections>
+                                    <segue destination="xy7-eg-cer" kind="show" id="kgq-k5-Q1o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -102,7 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="s9N-jV-UJm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Mxa-CL-JxP"/>
-                    <navigationItem key="navigationItem" title="Title" id="laB-oQ-VnV"/>
+                    <navigationItem key="navigationItem" title="Event" id="laB-oQ-VnV"/>
                     <connections>
                         <outlet property="eventLocation" destination="phe-OS-E4Y" id="6pH-pM-RLZ"/>
                         <outlet property="eventTime" destination="phu-hZ-gUF" id="OuZ-pr-cFc"/>
@@ -115,6 +123,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvn-lX-I2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="472.80000000000001" y="232.53373313343329"/>
+        </scene>
+        <!--Categories View Controller-->
+        <scene sceneID="569-Ez-IDE">
+            <objects>
+                <viewController id="xy7-eg-cer" customClass="CategoriesViewController" customModule="PickHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRF-vJ-3Yo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ElE-YH-E9b">
+                                <rect key="frame" x="20" y="124" width="335" height="454"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-Cq-yof">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="454"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M35-ZD-2Ne">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon">
+                                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Gcy-3k-TFS"/>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="qq9-cI-LEi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-XW-WZk">
+                                                <rect key="frame" x="0.0" y="154" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon">
+                                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Df0-wU-iDU"/>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="qld-Or-S7I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ANn-bE-E8G">
+                                                <rect key="frame" x="0.0" y="308" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon">
+                                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="4y7-Gv-ml6"/>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="Khn-LZ-caM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-RN-wkB">
+                                        <rect key="frame" x="171.5" y="0.0" width="163.5" height="454"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tkL-sC-Vph">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon"/>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="0s8-au-XDj"/>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="WST-7h-TGj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pZ7-ED-15f">
+                                                <rect key="frame" x="0.0" y="154" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon"/>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="C5d-87-z7w"/>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="Vwz-rf-Tjf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rNr-rK-rib">
+                                                <rect key="frame" x="0.0" y="308" width="163.5" height="146"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Button Icon"/>
+                                                <connections>
+                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Mnn-s3-Blc"/>
+                                                    <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="lz5-A1-c6S"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WOA-Os-YDL" firstAttribute="bottom" secondItem="ElE-YH-E9b" secondAttribute="bottom" constant="40" id="0Eg-GP-Lko"/>
+                            <constraint firstItem="ElE-YH-E9b" firstAttribute="leading" secondItem="WOA-Os-YDL" secondAttribute="leading" constant="20" id="Q8c-qW-IgS"/>
+                            <constraint firstItem="ElE-YH-E9b" firstAttribute="top" secondItem="WOA-Os-YDL" secondAttribute="top" constant="60" id="hjD-if-LT3"/>
+                            <constraint firstItem="WOA-Os-YDL" firstAttribute="trailing" secondItem="ElE-YH-E9b" secondAttribute="trailing" constant="20" id="zEG-oz-59e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WOA-Os-YDL"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="activityCards" destination="M35-ZD-2Ne" collectionClass="NSMutableArray" id="wGM-Ep-9em"/>
+                        <outletCollection property="activityCards" destination="lCe-XW-WZk" collectionClass="NSMutableArray" id="xqf-r0-Sqr"/>
+                        <outletCollection property="activityCards" destination="ANn-bE-E8G" collectionClass="NSMutableArray" id="FrY-RZ-O8N"/>
+                        <outletCollection property="activityCards" destination="tkL-sC-Vph" collectionClass="NSMutableArray" id="N0H-uJ-gzy"/>
+                        <outletCollection property="activityCards" destination="pZ7-ED-15f" collectionClass="NSMutableArray" id="May-dk-9aP"/>
+                        <outletCollection property="activityCards" destination="rNr-rK-rib" collectionClass="NSMutableArray" id="JEl-od-vPG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9m-fW-jCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="233"/>
         </scene>
         <!--Item-->
         <scene sceneID="VxL-5s-bfk">
@@ -216,12 +330,19 @@
                     <tabBarItem key="tabBarItem" title="Item" id="rlO-9x-YVF"/>
                     <navigationItem key="navigationItem" id="xjc-J9-2QX"/>
                     <connections>
+                        <outlet property="activityCategory" destination="M35-ZD-2Ne" id="Toz-aM-9UB"/>
                         <outlet property="choiceTable" destination="oYi-g8-fTj" id="ApL-Jz-WOh"/>
+                        <outletCollection property="activityCards" destination="ANn-bE-E8G" collectionClass="NSMutableArray" id="vN7-RR-Bxb"/>
+                        <outletCollection property="activityCards" destination="lCe-XW-WZk" collectionClass="NSMutableArray" id="YoA-3w-eni"/>
+                        <outletCollection property="activityCards" destination="M35-ZD-2Ne" collectionClass="NSMutableArray" id="qi3-0v-OPi"/>
+                        <outletCollection property="activityCards" destination="rNr-rK-rib" collectionClass="NSMutableArray" id="a7E-VA-wtA"/>
+                        <outletCollection property="activityCards" destination="pZ7-ED-15f" collectionClass="NSMutableArray" id="iDH-RU-pcu"/>
+                        <outletCollection property="activityCards" destination="tkL-sC-Vph" collectionClass="NSMutableArray" id="vhL-kZ-dYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="441-ja-ynv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="-450"/>
+            <point key="canvasLocation" x="472.80000000000001" y="-450.22488755622192"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="3ch-B3-ptv">
@@ -231,9 +352,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VH-zf-JwF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VH-zf-JwF">
                                 <rect key="frame" x="27" y="547" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="LOG IN WITH SNAP">
@@ -251,6 +371,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6VH-zf-JwF" firstAttribute="top" secondItem="AVc-z2-wD9" secondAttribute="top" constant="527" id="51M-90-zXI"/>
+                            <constraint firstItem="AVc-z2-wD9" firstAttribute="bottom" secondItem="6VH-zf-JwF" secondAttribute="bottom" constant="50" id="NwB-MU-K5R"/>
+                            <constraint firstItem="6VH-zf-JwF" firstAttribute="leading" secondItem="AVc-z2-wD9" secondAttribute="leading" constant="27" id="P4z-LM-GzH"/>
+                            <constraint firstItem="6VH-zf-JwF" firstAttribute="centerX" secondItem="puk-vD-n80" secondAttribute="centerX" id="peJ-la-jTl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AVc-z2-wD9"/>
                     </view>
                 </viewController>
