@@ -6,7 +6,7 @@ target 'PickHacks' do
   pod 'Mapbox-iOS-SDK', '~> 4.9'
 
   # Snapkit 
-  pod 'SnapKit', '~> 4.0.0'
+  pod 'SnapSDK', :subspecs => ['SCSDKLoginKit', 'SCSDKCreativeKit']
 
   # Firebase 
 end

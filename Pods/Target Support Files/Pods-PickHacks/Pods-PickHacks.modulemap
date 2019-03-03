@@ -1,4 +1,4 @@
-framework module Pods_PickHacks {
+module Pods_PickHacks {
   umbrella header "Pods-PickHacks-umbrella.h"
 
   export *

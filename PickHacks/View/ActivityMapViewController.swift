@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SCSDKCreativeKit
+import CoreLocation
 
 import Mapbox
 
@@ -18,32 +20,32 @@ class ActivityMapViewController: UIViewController, MGLMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Ask for Authorisation from the User.
-        self.locationManager.requestAlwaysAuthorization()
-        
-        // For use in foreground
-        self.locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-        
-        coordinates = (locationManager.location?.coordinate)!
-        
-        let current_loc = MGLPointAnnotation()
-        current_loc.coordinate = CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
-        current_loc.title = "You"
-        
-        
-        let url = URL(string: "mapbox://styles/mapbox/streets-v11")
-        let mapView = MGLMapView(frame: view.bounds, styleURL: url)
-        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        mapView.setCenter(CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude), zoomLevel: 9, animated: false)
-        
-        mapView.addAnnotation(current_loc)
-        view.addSubview(mapView)
+//        // Ask for Authorisation from the User.
+//        self.locationManager.requestAlwaysAuthorization()
+//        
+//        // For use in foreground
+//        self.locationManager.requestWhenInUseAuthorization()
+//        
+//        if CLLocationManager.locationServicesEnabled() {
+//            locationManager.delegate = self
+//            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+//            locationManager.startUpdatingLocation()
+//        }
+//        
+//        coordinates = (locationManager.location?.coordinate)!
+//        
+//        let current_loc = MGLPointAnnotation()
+//        current_loc.coordinate = CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
+//        current_loc.title = "You"
+//        
+//        
+//        let url = URL(string: "mapbox://styles/mapbox/streets-v11")
+//        let mapView = MGLMapView(frame: view.bounds, styleURL: url)
+//        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        mapView.setCenter(CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude), zoomLevel: 9, animated: false)
+//        
+//        mapView.addAnnotation(current_loc)
+//        view.addSubview(mapView)
     }
 }
 
