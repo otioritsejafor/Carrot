@@ -52,8 +52,8 @@ class ActivityMapViewController: UIViewController {
         
         mapView.delegate = self
         mapView.addAnnotation(current_loc)
-        let st_coord = CLLocationCoordinate2D(latitude: 37.95146, longitude: -91.770519)
-        let lion_coord = CLLocationCoordinate2D(latitude: 37.929820, longitude: -91.739820)
+//        let st_coord = CLLocationCoordinate2D(latitude: 37.95146, longitude: -91.770519)
+//        let lion_coord = CLLocationCoordinate2D(latitude: 37.929820, longitude: -91.739820)
         
 //        addAnnotation(coord: st_coord, location: "Missouri S&T Soccer Field rolla", time: "5:00 - 6:00 PM")
 //        addAnnotation(coord: lion_coord, location: "Lion Club Soccer Complex", time: "4:00 - 5:30 PM")
