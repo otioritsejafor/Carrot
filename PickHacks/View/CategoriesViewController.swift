@@ -13,6 +13,7 @@ import Mapbox
 class CategoriesViewController: UIViewController {
     
     let activities = [("Soccer", "⚽️"), ("Basketball", "🏀"), ("Swimming", "🏊‍♀️"), ("Volleyball", "🏐"), ("Golf", "🏌️‍♂️"), ("Hiking", "⛰")]
+    var selected = String()
     
     
     override func viewDidLoad() {
@@ -30,6 +31,34 @@ class CategoriesViewController: UIViewController {
 //            activityCards[index].
             activityCards[index].setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: UIControl.State.normal)
             
+        }
+    }
+    
+    @IBAction func mainButton(sender: UIButton) {
+        print(sender.tag)
+        switch sender.tag {
+        case 1:
+            selected = "Soccer"
+        case 2:
+            selected = "Volleyball"
+        case 3:
+            selected = "Basketball"
+        case 4:
+            selected = "Golf"
+        case 5:
+            selected = "Swimming"
+        default:
+            selected = "Hiking"
+        }
+        performSegue(withIdentifier: "showActivity", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showActivity" {
+            let mapVC = segue.destination as! ActivityMapViewController
+            mapVC.activity = selected
+            print("Selected sport is: \(selected)")
         }
     }
     

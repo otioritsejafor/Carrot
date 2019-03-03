@@ -21,6 +21,9 @@ class ActivityMapViewController: UIViewController {
     var places: Places!
     var activity: String!
     
+    var times: [String] = ["5:00 - 6:30 PM", "2:00 - 3:30 PM", "10:00 - 11:00 AM", "12:00 - 1:15 PM", "8:00 - 10:00 AM", "11:00 - 11:45 AM"]
+    var people: [String] = ["Players: 8", "Players: 3", "Players: 1", "Players: 5", "Players: 9", "Players: 4", "Players: 7"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +55,7 @@ class ActivityMapViewController: UIViewController {
         
         mapView.delegate = self
         mapView.addAnnotation(current_loc)
+        
 //        let st_coord = CLLocationCoordinate2D(latitude: 37.95146, longitude: -91.770519)
 //        let lion_coord = CLLocationCoordinate2D(latitude: 37.929820, longitude: -91.739820)
         
@@ -61,6 +65,7 @@ class ActivityMapViewController: UIViewController {
         
         
         view.addSubview(mapView)
+        addToggleButton()
 //=======
 //>>>>>>> Snapkit
     }
@@ -68,6 +73,22 @@ class ActivityMapViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         getPlaces()
         
+    }
+    
+    @objc func goBack(sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func addToggleButton() {
+        let button = UIButton(type: .system)
+        button.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin]
+        button.setTitle("Go back", for: .normal)
+        button.isSelected = true
+        button.sizeToFit()
+        button.center.x = self.view.center.x
+        button.frame = CGRect(origin: CGPoint(x: 9, y: button.frame.size.height - 5), size: button.frame.size)
+        button.addTarget(self, action: #selector(goBack(sender:)), for: .touchUpInside)
+        self.view.addSubview(button)
     }
     
     func addAnnotation(coord: CLLocationCoordinate2D, location: String, time: String) {
@@ -87,7 +108,7 @@ class ActivityMapViewController: UIViewController {
         let next = CLLocationCoordinate2D(latitude: lat, longitude: long)
         annotation.coordinate = next
         annotation.title = location
-        annotation.subtitle = time
+        annotation.subtitle = times.randomElement()! + " <--> " + people.randomElement()!
         
         mapView.addAnnotation(annotation)
         

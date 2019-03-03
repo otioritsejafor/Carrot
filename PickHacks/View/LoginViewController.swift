@@ -11,6 +11,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        appLogo.image = UIImage(imageLiteralResourceName: "cc")
+        
+    }
+    
+    @IBOutlet weak var appLogo: UIImageView!
     
     @IBAction func logInWithSnap(_ sender: UIButton) {
     }

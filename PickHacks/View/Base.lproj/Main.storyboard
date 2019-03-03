@@ -83,14 +83,6 @@
                                     <constraint firstAttribute="bottom" secondItem="22D-6c-QhM" secondAttribute="bottom" constant="52.5" id="pLK-am-PgO"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoP-hI-Yey">
-                                <rect key="frame" x="164" y="461" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Listing"/>
-                                <connections>
-                                    <segue destination="xy7-eg-cer" kind="show" id="kgq-k5-Q1o"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -138,37 +130,37 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-Cq-yof">
                                         <rect key="frame" x="0.0" y="0.0" width="163.5" height="454"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M35-ZD-2Ne">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M35-ZD-2Ne">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon">
                                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Gcy-3k-TFS"/>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="qq9-cI-LEi"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="ZHF-qI-RSp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-XW-WZk">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-XW-WZk">
                                                 <rect key="frame" x="0.0" y="154" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon">
                                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Df0-wU-iDU"/>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="qld-Or-S7I"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="FqD-xL-7VX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ANn-bE-E8G">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ANn-bE-E8G">
                                                 <rect key="frame" x="0.0" y="308" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon">
                                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="4y7-Gv-ml6"/>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="Khn-LZ-caM"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="Sf2-Ih-mEy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -176,31 +168,31 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-RN-wkB">
                                         <rect key="frame" x="171.5" y="0.0" width="163.5" height="454"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tkL-sC-Vph">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tkL-sC-Vph">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon"/>
                                                 <connections>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="0s8-au-XDj"/>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="WST-7h-TGj"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="Lpy-j7-FwV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pZ7-ED-15f">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pZ7-ED-15f">
                                                 <rect key="frame" x="0.0" y="154" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon"/>
                                                 <connections>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="C5d-87-z7w"/>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="Vwz-rf-Tjf"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="bZk-Nm-GRw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rNr-rK-rib">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rNr-rK-rib">
                                                 <rect key="frame" x="0.0" y="308" width="163.5" height="146"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                 <state key="normal" title="Button Icon"/>
                                                 <connections>
-                                                    <action selector="activityCategory:" destination="hvB-fI-mji" eventType="touchUpInside" id="Mnn-s3-Blc"/>
                                                     <action selector="activityCategory:" destination="xy7-eg-cer" eventType="touchUpInside" id="lz5-A1-c6S"/>
+                                                    <action selector="mainButtonWithSender:" destination="xy7-eg-cer" eventType="touchUpInside" id="TMu-fe-Lcm"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -217,6 +209,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WOA-Os-YDL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Me9-Qa-8Mp"/>
                     <connections>
                         <outletCollection property="activityCards" destination="M35-ZD-2Ne" collectionClass="NSMutableArray" id="wGM-Ep-9em"/>
                         <outletCollection property="activityCards" destination="lCe-XW-WZk" collectionClass="NSMutableArray" id="xqf-r0-Sqr"/>
@@ -224,11 +217,12 @@
                         <outletCollection property="activityCards" destination="tkL-sC-Vph" collectionClass="NSMutableArray" id="N0H-uJ-gzy"/>
                         <outletCollection property="activityCards" destination="pZ7-ED-15f" collectionClass="NSMutableArray" id="May-dk-9aP"/>
                         <outletCollection property="activityCards" destination="rNr-rK-rib" collectionClass="NSMutableArray" id="JEl-od-vPG"/>
+                        <segue destination="LtK-or-S9d" kind="presentation" identifier="showActivity" id="Pv9-i7-aFy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9m-fW-jCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="233"/>
+            <point key="canvasLocation" x="473" y="-525"/>
         </scene>
         <!--Item-->
         <scene sceneID="VxL-5s-bfk">
@@ -257,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="hvB-fI-mji" kind="relationship" relationship="rootViewController" id="CWl-er-IbA"/>
+                        <segue destination="xy7-eg-cer" kind="relationship" relationship="rootViewController" id="TvV-Ks-Ju8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTM-TQ-Igm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -292,57 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOu-vE-eFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="-450"/>
-        </scene>
-        <!--Activities-->
-        <scene sceneID="0iI-JJ-QYK">
-            <objects>
-                <viewController title="Activities" id="hvB-fI-mji" customClass="ActivitySelectViewController" customModule="PickHacks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OBI-bO-pZ8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oYi-g8-fTj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityTableCell" id="GOg-ur-q2G">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOg-ur-q2G" id="Hco-ju-cC0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="LtK-or-S9d" kind="presentation" identifier="showActivity" id="tdZ-4s-uGV"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="hvB-fI-mji" id="FA7-IH-rzn"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="qRY-0H-BtP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rlO-9x-YVF"/>
-                    <navigationItem key="navigationItem" id="xjc-J9-2QX"/>
-                    <connections>
-                        <outlet property="activityCategory" destination="M35-ZD-2Ne" id="Toz-aM-9UB"/>
-                        <outlet property="choiceTable" destination="oYi-g8-fTj" id="ApL-Jz-WOh"/>
-                        <outletCollection property="activityCards" destination="ANn-bE-E8G" collectionClass="NSMutableArray" id="vN7-RR-Bxb"/>
-                        <outletCollection property="activityCards" destination="lCe-XW-WZk" collectionClass="NSMutableArray" id="YoA-3w-eni"/>
-                        <outletCollection property="activityCards" destination="M35-ZD-2Ne" collectionClass="NSMutableArray" id="qi3-0v-OPi"/>
-                        <outletCollection property="activityCards" destination="rNr-rK-rib" collectionClass="NSMutableArray" id="a7E-VA-wtA"/>
-                        <outletCollection property="activityCards" destination="pZ7-ED-15f" collectionClass="NSMutableArray" id="iDH-RU-pcu"/>
-                        <outletCollection property="activityCards" destination="tkL-sC-Vph" collectionClass="NSMutableArray" id="vhL-kZ-dYB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="441-ja-ynv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="472.80000000000001" y="-450.22488755622192"/>
+            <point key="canvasLocation" x="1644" y="-450"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="3ch-B3-ptv">
@@ -369,6 +313,10 @@
                                     <segue destination="FWg-67-Y3r" kind="show" id="ZS2-cU-4BN"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhj-90-WBw">
+                                <rect key="frame" x="27" y="61" width="320" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -379,6 +327,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AVc-z2-wD9"/>
                     </view>
+                    <connections>
+                        <outlet property="appLogo" destination="mhj-90-WBw" id="dNV-kw-FGN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQl-Yj-xiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
