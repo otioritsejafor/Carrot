@@ -7,68 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		250E54634F3F6566E09012FFEC8A8C88 /* MBPlacemarkScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */; };
-		312D60D85719A1F94674D74AD2CC5BBE /* MapboxGeocoder.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		347DDD7D1E8C2F3626AB767488F82177 /* MBGeocodeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */; };
-		37103CA9692C77A8CE1D31D0A29ED0D2 /* MBGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */; };
-		5254997080BC1DCB94998F46AF231BDA /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */; };
-		5D7E7E31E7305EC30E34A33BF4236C26 /* MapboxGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		70094DD8CC4B0B656B7F95E8DB5B8BDA /* Pods-PickHacks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7122E2D5B0662A8318A450A96B52F1AF /* MBPlacemarkScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AD76F327C1ACC72A81EB9E708C0CDB22 /* MBRectangularRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */; };
-		C173517257EA02834B446F5838790E1D /* MapboxGeocoder.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */; };
-		C225132A6CF8B1E963A3850DB66C0B00 /* MBPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */; };
-		FF5B2F74C4CFB337DF063495CF73894F /* Pods-PickHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */; };
+		02CFBA680CE1CB0379A87CFE92F74A9D /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11CD6BA415F034C2AB1877A7C21C05 /* ConstraintMultiplierTarget.swift */; };
+		0795BC273B89BCF0FAF2DC0C4B33A472 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75BABEDA9A9CA6E47E60EA671833657 /* ConstraintInsetTarget.swift */; };
+		3048E5ABFDDDCA76D998753A3FCA536D /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9402E1085E77ADD7381A6D83B68BD /* LayoutConstraint.swift */; };
+		36952E443F3F172E8CBBA71F2DD38EB5 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3C2CF03A57E8C49851DE9048F3118 /* LayoutConstraintItem.swift */; };
+		43116BD6F4275243298373E93AF20A34 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65870D0B9C6A6C88FAF315EDB9153D1A /* ConstraintPriorityTarget.swift */; };
+		434597DA4BB5FEC469F6EB18894E9AD4 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93728154067C2B4770203B3FBDE42AD5 /* ConstraintMakerExtendable.swift */; };
+		455F5C567EE229F528AC37B84A0921D4 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DB3CD9EA67A10C6613C868FECED92F /* ConstraintItem.swift */; };
+		4ACE071E15719DF17C09C8311901E4F8 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18309842B01DCDDF33920BEF10E9E91 /* ConstraintMakerPriortizable.swift */; };
+		5C791BD5A3677929577EF74DF40345E9 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338529A6FBDE87F25C4622CFABD43C1 /* ConstraintMakerRelatable.swift */; };
+		6E3FD5745A472F97F94F076B1D95FD39 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19359C96B01F75AB15A4D844BEEA8519 /* ConstraintMakerEditable.swift */; };
+		7467A94DF080E351F3488C0E6A04DA6A /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA18D74E501FBD646CF1A415E03D27 /* ConstraintOffsetTarget.swift */; };
+		824597790EFAFD0F67D483B4A0E63F76 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E5CF47DEBBB37AE5890FD67B8B1B11 /* ConstraintLayoutGuide.swift */; };
+		8682D0F3AF6C87A1C38AA850E4A7F723 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FDB81DF13A6EBB51E798AE883CE6E72 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87ABE7243D6B05E22E181E9158327E8D /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A218DDC8282647ADB1E4B1988FA45 /* ConstraintDSL.swift */; };
+		889C7ED3CA09930E3C3F52B29E40C171 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B51820C2779E7C4AC755F1B917EB62 /* UILayoutSupport+Extensions.swift */; };
+		89EAAB0AB8486C393A3397F3D16D7375 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EFC2C270DEA2B0E5A81A4BD5EF70DC /* ConstraintRelation.swift */; };
+		8E0AEE29C7FFBAEE6E4D30481BA660CD /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D405F6A48D238C313071990CD6CA6 /* ConstraintLayoutSupportDSL.swift */; };
+		8E7BFD4FEAA184BCEF39AAAAFB89CC9C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B756AE1177FF0960C9F6C07F0DE677 /* ConstraintAttributes.swift */; };
+		946EFA324CF0DC3274064221A4E01571 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051355DE784CA96E8F33268453EF695 /* ConstraintMaker.swift */; };
+		9A6069ABC28858335B0A94BC32D7802B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2798C4381C3F788954E7B5972A4233D /* ConstraintLayoutSupport.swift */; };
+		A1CA197B4F63915F1D306BDCE094BD8F /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2DFA793DA908AADFFCD101C361F8FA /* ConstraintLayoutGuideDSL.swift */; };
+		A741986B526CD848299C67E6B324BBB7 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E49D94521FBAC86322522B05601A09 /* ConstraintConstantTarget.swift */; };
+		ABEB2202DCD66B7E2DACA0EC0D175156 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DBBCA03A3BE85F6086BD81D0FF6A4 /* ConstraintInsets.swift */; };
+		ADC8E9E53732BFDD96C2766C34ECBC80 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF91CEE778DE8B37EFE86721BAB97C81 /* SnapKit-dummy.m */; };
+		AF202CB9EE8326AB5EFE736703B59AE7 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2371E3F53D92BF63A2652D5318AA7A /* ConstraintView.swift */; };
+		B1D53BA116F6BF010077A1165DA830A9 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E798DF15FE74DD96A1391EE2639E83 /* ConstraintMakerFinalizable.swift */; };
+		B77CF29F203AF533130D0C5A3F333118 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E6601F4CFFBC6CD046BE4628AEEB0 /* ConstraintViewDSL.swift */; };
+		B88CE381686E66E343397B7D7B3868DE /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA634A73EB30CE4D9BC2BE4F75FFF9D /* ConstraintView+Extensions.swift */; };
+		C54DCAEAB8319CDE05A386BD1FF2507F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BDAED5916256A4EE0EBE5BB2E20919 /* Constraint.swift */; };
+		D0B3A2D5DC135C4D597782EA4E6E4AEE /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D600E93EC60BDD4EA5D42AFFCA8A72A /* ConstraintLayoutGuide+Extensions.swift */; };
+		D4DAFA8BF82DE80E7953E0E3D7F7657C /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C5A65FFFA49264CA9D3B6CC24A6A3 /* Typealiases.swift */; };
+		DAF27B95396A578DE360F1DA605E6C31 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5806A12C95D8304C188BE2AA97B84E /* ConstraintConfig.swift */; };
+		E75D84002D6611A70F64229C321215A0 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE5A44B70CA60686E50B1C29D1AEAF /* ConstraintPriority.swift */; };
+		EE2AAEFA2F49BD2F5622CE372914AE43 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480A83D73F7E011EE655DDD7F754CFFC /* Debugging.swift */; };
+		EE5AA0E50A63EFFE47CCE7E9B806F73E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05C7AB49AA5E732DCB3DA86FCDE2F2 /* ConstraintRelatableTarget.swift */; };
+		F3AC874536ED458E72CF12A3331DE2F5 /* Pods-PickHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */; };
+		F50BB3F1A13214C6DB107E63DECB12EE /* Pods-PickHacks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6D4FC6F9B0F24ED869FDD31303B4CB7 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680D1DE807DE185A81FF21323BB0950 /* ConstraintDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F26C7794E0887EC61AD0394E85BA4B58 /* PBXContainerItemProxy */ = {
+		B28D01CD958C56362E03FB7492714B08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA8C24EFEC268A9EC7EC44A8B76AF92E;
-			remoteInfo = MapboxGeocoder.swift;
+			remoteGlobalIDString = 4CBD2258B55B4FBE2E8A651C23C826C9;
+			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0343F9238AC90984D6B8D1D9CCF1EEDD /* Pods-PickHacks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PickHacks-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocoder.swift; path = MapboxGeocoder/MBGeocoder.swift; sourceTree = "<group>"; };
-		20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxGeocoder.h; path = MapboxGeocoder/MapboxGeocoder.h; sourceTree = "<group>"; };
-		2333E92401F9A40B9644D799E1EDFDF0 /* MapboxGeocoder.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGeocoder.swift-prefix.pch"; sourceTree = "<group>"; };
+		05DB3CD9EA67A10C6613C868FECED92F /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		0EAE5A44B70CA60686E50B1C29D1AEAF /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		10F9402E1085E77ADD7381A6D83B68BD /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		14E37E82339DD7F6E4C329772C3BE10E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		169A218DDC8282647ADB1E4B1988FA45 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		19359C96B01F75AB15A4D844BEEA8519 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		1E5806A12C95D8304C188BE2AA97B84E /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		22B756AE1177FF0960C9F6C07F0DE677 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		2B7D405F6A48D238C313071990CD6CA6 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		2D0E6601F4CFFBC6CD046BE4628AEEB0 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		2E4ECF217AE65F3F2C02423FE3160DB0 /* Pods-PickHacks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PickHacks-dummy.m"; sourceTree = "<group>"; };
-		3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MapboxGeocoder.swift-umbrella.h"; path = "../../Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h"; sourceTree = "<group>"; };
-		43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRectangularRegion.swift; path = MapboxGeocoder/MBRectangularRegion.swift; sourceTree = "<group>"; };
-		52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemarkScope.swift; path = MapboxGeocoder/MBPlacemarkScope.swift; sourceTree = "<group>"; };
+		2F2DFA793DA908AADFFCD101C361F8FA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		33237CA7264C3BC1E7DE8875EE12CF6D /* libSnapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSnapKit.a; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33EFC2C270DEA2B0E5A81A4BD5EF70DC /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		3B05C7AB49AA5E732DCB3DA86FCDE2F2 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		3EE3C2CF03A57E8C49851DE9048F3118 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		4680D1DE807DE185A81FF21323BB0950 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		480A83D73F7E011EE655DDD7F754CFFC /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		4B2371E3F53D92BF63A2652D5318AA7A /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		5051355DE784CA96E8F33268453EF695 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		5338529A6FBDE87F25C4622CFABD43C1 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		536400244F560837063AF471A7502819 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		5D58BE87A9AE8E43A6201E0DA25A1660 /* Pods-PickHacks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PickHacks-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxGeocoder.swift.xcconfig; sourceTree = "<group>"; };
-		7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPlacemarkScope.h; path = MapboxGeocoder/MBPlacemarkScope.h; sourceTree = "<group>"; };
-		81420AF8D51F81EFCF06634CC714C167 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		65870D0B9C6A6C88FAF315EDB9153D1A /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.debug.xcconfig"; sourceTree = "<group>"; };
-		858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocodeOptions.swift; path = MapboxGeocoder/MBGeocodeOptions.swift; sourceTree = "<group>"; };
-		891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PickHacks.a"; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2991143F6F2F6081C9377A83DF4980 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SnapKit.modulemap; path = ../../Headers/Public/SnapKit/SnapKit.modulemap; sourceTree = "<group>"; };
+		8D600E93EC60BDD4EA5D42AFFCA8A72A /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		924C5A65FFFA49264CA9D3B6CC24A6A3 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		93728154067C2B4770203B3FBDE42AD5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C47648D593AB0133A07DC4BCD16D7BC /* Pods-PickHacks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-frameworks.sh"; sourceTree = "<group>"; };
+		9F328639562F98430C833E598BAC0229 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		9FDB81DF13A6EBB51E798AE883CE6E72 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SnapKit-umbrella.h"; path = "../../Headers/Public/SnapKit/SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		A46F2048ECB2F91E12ECA2F59DDA49C3 /* Pods-PickHacks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PickHacks-umbrella.h"; sourceTree = "<group>"; };
+		A6B51820C2779E7C4AC755F1B917EB62 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		A6BDAED5916256A4EE0EBE5BB2E20919 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		B18309842B01DCDDF33920BEF10E9E91 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		B41E4754C42F78A0E29C4440879AFFB2 /* Pods-PickHacks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PickHacks.modulemap"; sourceTree = "<group>"; };
-		C22E98E60D61F58488C8DEA5D0A9A72C /* MapboxGeocoder.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = MapboxGeocoder.swift.modulemap; path = ../../Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap; sourceTree = "<group>"; };
-		CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemark.swift; path = MapboxGeocoder/MBPlacemark.swift; sourceTree = "<group>"; };
+		BAB88F24652846AB3EBE1F958EAC474A /* libPods-PickHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PickHacks.a"; path = "libPods-PickHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF91CEE778DE8B37EFE86721BAB97C81 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		C2798C4381C3F788954E7B5972A4233D /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		C4E5CF47DEBBB37AE5890FD67B8B1B11 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		C8FA18D74E501FBD646CF1A415E03D27 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		CE6F5357F779E6D0525D7C4283B70BEF /* Pods-PickHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PickHacks.release.xcconfig"; sourceTree = "<group>"; };
-		CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxGeocoder.swift-dummy.m"; sourceTree = "<group>"; };
 		CFD5E7FDB898BB07A50DC437E299E89F /* Pods-PickHacks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PickHacks-resources.sh"; sourceTree = "<group>"; };
-		D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMapboxGeocoder.swift.a; path = libMapboxGeocoder.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreLocation.swift; path = MapboxGeocoder/CoreLocation.swift; sourceTree = "<group>"; };
+		D6E49D94521FBAC86322522B05601A09 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		D6E798DF15FE74DD96A1391EE2639E83 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		DD11CD6BA415F034C2AB1877A7C21C05 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		E75BABEDA9A9CA6E47E60EA671833657 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		EEA634A73EB30CE4D9BC2BE4F75FFF9D /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F63DBBCA03A3BE85F6086BD81D0FF6A4 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B8950DD4F56CB0C2B1F1BA13D1864D5 /* Frameworks */ = {
+		20DD2CDAB5705CA2B1E5519DA25D4799 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D435BE14003AC5BCE476EB09B86CC542 /* Frameworks */ = {
+		443525E5D36406A1077E7D93934A26D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,26 +154,65 @@
 			path = "Target Support Files/Pods-PickHacks";
 			sourceTree = "<group>";
 		};
-		186746AFED65C595083281FE1299BEFF /* Support Files */ = {
+		1C7617B3A904DD0484593457C22063D5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C22E98E60D61F58488C8DEA5D0A9A72C /* MapboxGeocoder.swift.modulemap */,
-				6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */,
-				CFC4DF93750079F1A4D1A3B9E52C4061 /* MapboxGeocoder.swift-dummy.m */,
-				2333E92401F9A40B9644D799E1EDFDF0 /* MapboxGeocoder.swift-prefix.pch */,
-				3A2D6E16ACA7363CD8A29EA93BFAFC4C /* MapboxGeocoder.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MapboxGeocoder.swift";
-			sourceTree = "<group>";
-		};
-		2EA4E781ACE54FCE8D5BC6118301F4B6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B3A113A082E69A40427B7B476CDE041C /* Mapbox-iOS-SDK */,
-				9C920220DFF8C4F5CD1604335D692C31 /* MapboxGeocoder.swift */,
+				A75EF89C6FABF9039F71187063A91D22 /* Mapbox-iOS-SDK */,
+				62E9DFCDAE2C50CA5266C8ACFCB7C507 /* SnapKit */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		538DC6BC55710F437480ED2BB36C8E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB88F24652846AB3EBE1F958EAC474A /* libPods-PickHacks.a */,
+				33237CA7264C3BC1E7DE8875EE12CF6D /* libSnapKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62E9DFCDAE2C50CA5266C8ACFCB7C507 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6BDAED5916256A4EE0EBE5BB2E20919 /* Constraint.swift */,
+				22B756AE1177FF0960C9F6C07F0DE677 /* ConstraintAttributes.swift */,
+				1E5806A12C95D8304C188BE2AA97B84E /* ConstraintConfig.swift */,
+				D6E49D94521FBAC86322522B05601A09 /* ConstraintConstantTarget.swift */,
+				4680D1DE807DE185A81FF21323BB0950 /* ConstraintDescription.swift */,
+				169A218DDC8282647ADB1E4B1988FA45 /* ConstraintDSL.swift */,
+				F63DBBCA03A3BE85F6086BD81D0FF6A4 /* ConstraintInsets.swift */,
+				E75BABEDA9A9CA6E47E60EA671833657 /* ConstraintInsetTarget.swift */,
+				05DB3CD9EA67A10C6613C868FECED92F /* ConstraintItem.swift */,
+				C4E5CF47DEBBB37AE5890FD67B8B1B11 /* ConstraintLayoutGuide.swift */,
+				8D600E93EC60BDD4EA5D42AFFCA8A72A /* ConstraintLayoutGuide+Extensions.swift */,
+				2F2DFA793DA908AADFFCD101C361F8FA /* ConstraintLayoutGuideDSL.swift */,
+				C2798C4381C3F788954E7B5972A4233D /* ConstraintLayoutSupport.swift */,
+				2B7D405F6A48D238C313071990CD6CA6 /* ConstraintLayoutSupportDSL.swift */,
+				5051355DE784CA96E8F33268453EF695 /* ConstraintMaker.swift */,
+				19359C96B01F75AB15A4D844BEEA8519 /* ConstraintMakerEditable.swift */,
+				93728154067C2B4770203B3FBDE42AD5 /* ConstraintMakerExtendable.swift */,
+				D6E798DF15FE74DD96A1391EE2639E83 /* ConstraintMakerFinalizable.swift */,
+				B18309842B01DCDDF33920BEF10E9E91 /* ConstraintMakerPriortizable.swift */,
+				5338529A6FBDE87F25C4622CFABD43C1 /* ConstraintMakerRelatable.swift */,
+				DD11CD6BA415F034C2AB1877A7C21C05 /* ConstraintMultiplierTarget.swift */,
+				C8FA18D74E501FBD646CF1A415E03D27 /* ConstraintOffsetTarget.swift */,
+				0EAE5A44B70CA60686E50B1C29D1AEAF /* ConstraintPriority.swift */,
+				65870D0B9C6A6C88FAF315EDB9153D1A /* ConstraintPriorityTarget.swift */,
+				3B05C7AB49AA5E732DCB3DA86FCDE2F2 /* ConstraintRelatableTarget.swift */,
+				33EFC2C270DEA2B0E5A81A4BD5EF70DC /* ConstraintRelation.swift */,
+				4B2371E3F53D92BF63A2652D5318AA7A /* ConstraintView.swift */,
+				EEA634A73EB30CE4D9BC2BE4F75FFF9D /* ConstraintView+Extensions.swift */,
+				2D0E6601F4CFFBC6CD046BE4628AEEB0 /* ConstraintViewDSL.swift */,
+				480A83D73F7E011EE655DDD7F754CFFC /* Debugging.swift */,
+				10F9402E1085E77ADD7381A6D83B68BD /* LayoutConstraint.swift */,
+				3EE3C2CF03A57E8C49851DE9048F3118 /* LayoutConstraintItem.swift */,
+				924C5A65FFFA49264CA9D3B6CC24A6A3 /* Typealiases.swift */,
+				A6B51820C2779E7C4AC755F1B917EB62 /* UILayoutSupport+Extensions.swift */,
+				DE5CC1E177133FF494B8D12849283027 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -129,44 +220,27 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				2EA4E781ACE54FCE8D5BC6118301F4B6 /* Pods */,
-				A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */,
+				1C7617B3A904DD0484593457C22063D5 /* Pods */,
+				538DC6BC55710F437480ED2BB36C8E83 /* Products */,
 				AB3BC51D32A85FADDFD184C5475CDD77 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9C920220DFF8C4F5CD1604335D692C31 /* MapboxGeocoder.swift */ = {
+		9064903B2C474E9F2B6B6C8C6B2F6090 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D99EC88ACFD18CB50DBC44A9533A9421 /* CoreLocation.swift */,
-				20899A7F6D7D966C757D891CC5503C60 /* MapboxGeocoder.h */,
-				858FEB773A1B3176C32FB5B325A40FC0 /* MBGeocodeOptions.swift */,
-				0B60EF462F642372BBCCBDB75B22DB96 /* MBGeocoder.swift */,
-				CC930165C8F59D431FCF67447447C609 /* MBPlacemark.swift */,
-				7677E6237A73655322A14406B0EA08F7 /* MBPlacemarkScope.h */,
-				52AF859729F635B54062D40E68B54DAC /* MBPlacemarkScope.swift */,
-				43E1471B9AFAF454600D0F07A31A78F2 /* MBRectangularRegion.swift */,
-				186746AFED65C595083281FE1299BEFF /* Support Files */,
-			);
-			name = MapboxGeocoder.swift;
-			path = MapboxGeocoder.swift;
-			sourceTree = "<group>";
-		};
-		9F9591DD09FDF0547625DCD49DA89C95 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				81420AF8D51F81EFCF06634CC714C167 /* Mapbox.framework */,
+				14E37E82339DD7F6E4C329772C3BE10E /* Mapbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */ = {
+		A75EF89C6FABF9039F71187063A91D22 /* Mapbox-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */,
-				891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */,
+				9064903B2C474E9F2B6B6C8C6B2F6090 /* Frameworks */,
 			);
-			name = Products;
+			name = "Mapbox-iOS-SDK";
+			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		AB3BC51D32A85FADDFD184C5475CDD77 /* Targets Support Files */ = {
@@ -177,73 +251,75 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B3A113A082E69A40427B7B476CDE041C /* Mapbox-iOS-SDK */ = {
+		DE5CC1E177133FF494B8D12849283027 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F9591DD09FDF0547625DCD49DA89C95 /* Frameworks */,
+				8C2991143F6F2F6081C9377A83DF4980 /* SnapKit.modulemap */,
+				9F328639562F98430C833E598BAC0229 /* SnapKit.xcconfig */,
+				BF91CEE778DE8B37EFE86721BAB97C81 /* SnapKit-dummy.m */,
+				536400244F560837063AF471A7502819 /* SnapKit-prefix.pch */,
+				9FDB81DF13A6EBB51E798AE883CE6E72 /* SnapKit-umbrella.h */,
 			);
-			name = "Mapbox-iOS-SDK";
-			path = "Mapbox-iOS-SDK";
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C1D7844E45DD8D4DE22E8535947D9462 /* Headers */ = {
+		2CC084395265AB182D6D4C6EDA4604E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70094DD8CC4B0B656B7F95E8DB5B8BDA /* Pods-PickHacks-umbrella.h in Headers */,
+				F50BB3F1A13214C6DB107E63DECB12EE /* Pods-PickHacks-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC2825C5E79271E7B4D005AEE84005DC /* Headers */ = {
+		73C35CCCF78D0C17318FA34268C213B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7E7E31E7305EC30E34A33BF4236C26 /* MapboxGeocoder.h in Headers */,
-				312D60D85719A1F94674D74AD2CC5BBE /* MapboxGeocoder.swift-umbrella.h in Headers */,
-				7122E2D5B0662A8318A450A96B52F1AF /* MBPlacemarkScope.h in Headers */,
+				8682D0F3AF6C87A1C38AA850E4A7F723 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0DDCA30DA2FC32702AECC93B4E1780E1 /* Pods-PickHacks */ = {
+		4CBD2258B55B4FBE2E8A651C23C826C9 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DB89C815B547E4989608B3466FEAB11 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */;
+			buildConfigurationList = C9CAF245FD15C2271903078AF84C8B1B /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				C1D7844E45DD8D4DE22E8535947D9462 /* Headers */,
-				23B3E0DAE5038EB9457C7F0214B40A75 /* Sources */,
-				7B8950DD4F56CB0C2B1F1BA13D1864D5 /* Frameworks */,
+				73C35CCCF78D0C17318FA34268C213B4 /* Headers */,
+				084E0D310A35C3B8D5127EC3BAB16872 /* Sources */,
+				443525E5D36406A1077E7D93934A26D1 /* Frameworks */,
+				FB1A55441043B3D65C25464A9443472A /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F50FC24BCE33CAFE8531594B0FBBD3A0 /* PBXTargetDependency */,
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 33237CA7264C3BC1E7DE8875EE12CF6D /* libSnapKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		86AEE39C1A5A2FCBC52620BDD8751DAA /* Pods-PickHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C2172A5DECC99CFFE2868C93DEC71F /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */;
+			buildPhases = (
+				2CC084395265AB182D6D4C6EDA4604E3 /* Headers */,
+				9201923A708270DE41BC5B4FDADC12A4 /* Sources */,
+				20DD2CDAB5705CA2B1E5519DA25D4799 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1BADDF1E9C7A205C9B3269385A016F /* PBXTargetDependency */,
 			);
 			name = "Pods-PickHacks";
 			productName = "Pods-PickHacks";
-			productReference = 891DC8F26836ADDDE0264FA14E6D5324 /* libPods-PickHacks.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2629371EC72B3678E4842FCF6414C106 /* Build configuration list for PBXNativeTarget "MapboxGeocoder.swift" */;
-			buildPhases = (
-				DC2825C5E79271E7B4D005AEE84005DC /* Headers */,
-				5669F20618730AC9FD7F5B0F53B19F20 /* Sources */,
-				D435BE14003AC5BCE476EB09B86CC542 /* Frameworks */,
-				559664FD99FB4A8AFBAD5BAD39294C3D /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MapboxGeocoder.swift;
-			productName = MapboxGeocoder.swift;
-			productReference = D3953BC1C2F0B71FD5FCA73EC3935AA0 /* libMapboxGeocoder.swift.a */;
+			productReference = BAB88F24652846AB3EBE1F958EAC474A /* libPods-PickHacks.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -263,18 +339,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A85EF9E50C9E190D0C3342359CDC6EF6 /* Products */;
+			productRefGroup = 538DC6BC55710F437480ED2BB36C8E83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */,
-				0DDCA30DA2FC32702AECC93B4E1780E1 /* Pods-PickHacks */,
+				86AEE39C1A5A2FCBC52620BDD8751DAA /* Pods-PickHacks */,
+				4CBD2258B55B4FBE2E8A651C23C826C9 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		559664FD99FB4A8AFBAD5BAD39294C3D /* Copy generated compatibility header */ = {
+		FB1A55441043B3D65C25464A9443472A /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,83 +359,139 @@
 			);
 			inputPaths = (
 				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap",
-				"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h",
+				"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit.modulemap",
+				"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit-umbrella.h",
 			);
 			name = "Copy generated compatibility header";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-umbrella.h",
 				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MapboxGeocoder/MapboxGeocoder.swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23B3E0DAE5038EB9457C7F0214B40A75 /* Sources */ = {
+		084E0D310A35C3B8D5127EC3BAB16872 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5B2F74C4CFB337DF063495CF73894F /* Pods-PickHacks-dummy.m in Sources */,
+				C54DCAEAB8319CDE05A386BD1FF2507F /* Constraint.swift in Sources */,
+				8E7BFD4FEAA184BCEF39AAAAFB89CC9C /* ConstraintAttributes.swift in Sources */,
+				DAF27B95396A578DE360F1DA605E6C31 /* ConstraintConfig.swift in Sources */,
+				A741986B526CD848299C67E6B324BBB7 /* ConstraintConstantTarget.swift in Sources */,
+				F6D4FC6F9B0F24ED869FDD31303B4CB7 /* ConstraintDescription.swift in Sources */,
+				87ABE7243D6B05E22E181E9158327E8D /* ConstraintDSL.swift in Sources */,
+				ABEB2202DCD66B7E2DACA0EC0D175156 /* ConstraintInsets.swift in Sources */,
+				0795BC273B89BCF0FAF2DC0C4B33A472 /* ConstraintInsetTarget.swift in Sources */,
+				455F5C567EE229F528AC37B84A0921D4 /* ConstraintItem.swift in Sources */,
+				D0B3A2D5DC135C4D597782EA4E6E4AEE /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				824597790EFAFD0F67D483B4A0E63F76 /* ConstraintLayoutGuide.swift in Sources */,
+				A1CA197B4F63915F1D306BDCE094BD8F /* ConstraintLayoutGuideDSL.swift in Sources */,
+				9A6069ABC28858335B0A94BC32D7802B /* ConstraintLayoutSupport.swift in Sources */,
+				8E0AEE29C7FFBAEE6E4D30481BA660CD /* ConstraintLayoutSupportDSL.swift in Sources */,
+				946EFA324CF0DC3274064221A4E01571 /* ConstraintMaker.swift in Sources */,
+				6E3FD5745A472F97F94F076B1D95FD39 /* ConstraintMakerEditable.swift in Sources */,
+				434597DA4BB5FEC469F6EB18894E9AD4 /* ConstraintMakerExtendable.swift in Sources */,
+				B1D53BA116F6BF010077A1165DA830A9 /* ConstraintMakerFinalizable.swift in Sources */,
+				4ACE071E15719DF17C09C8311901E4F8 /* ConstraintMakerPriortizable.swift in Sources */,
+				5C791BD5A3677929577EF74DF40345E9 /* ConstraintMakerRelatable.swift in Sources */,
+				02CFBA680CE1CB0379A87CFE92F74A9D /* ConstraintMultiplierTarget.swift in Sources */,
+				7467A94DF080E351F3488C0E6A04DA6A /* ConstraintOffsetTarget.swift in Sources */,
+				E75D84002D6611A70F64229C321215A0 /* ConstraintPriority.swift in Sources */,
+				43116BD6F4275243298373E93AF20A34 /* ConstraintPriorityTarget.swift in Sources */,
+				EE5AA0E50A63EFFE47CCE7E9B806F73E /* ConstraintRelatableTarget.swift in Sources */,
+				89EAAB0AB8486C393A3397F3D16D7375 /* ConstraintRelation.swift in Sources */,
+				B88CE381686E66E343397B7D7B3868DE /* ConstraintView+Extensions.swift in Sources */,
+				AF202CB9EE8326AB5EFE736703B59AE7 /* ConstraintView.swift in Sources */,
+				B77CF29F203AF533130D0C5A3F333118 /* ConstraintViewDSL.swift in Sources */,
+				EE2AAEFA2F49BD2F5622CE372914AE43 /* Debugging.swift in Sources */,
+				3048E5ABFDDDCA76D998753A3FCA536D /* LayoutConstraint.swift in Sources */,
+				36952E443F3F172E8CBBA71F2DD38EB5 /* LayoutConstraintItem.swift in Sources */,
+				ADC8E9E53732BFDD96C2766C34ECBC80 /* SnapKit-dummy.m in Sources */,
+				D4DAFA8BF82DE80E7953E0E3D7F7657C /* Typealiases.swift in Sources */,
+				889C7ED3CA09930E3C3F52B29E40C171 /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5669F20618730AC9FD7F5B0F53B19F20 /* Sources */ = {
+		9201923A708270DE41BC5B4FDADC12A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5254997080BC1DCB94998F46AF231BDA /* CoreLocation.swift in Sources */,
-				C173517257EA02834B446F5838790E1D /* MapboxGeocoder.swift-dummy.m in Sources */,
-				347DDD7D1E8C2F3626AB767488F82177 /* MBGeocodeOptions.swift in Sources */,
-				37103CA9692C77A8CE1D31D0A29ED0D2 /* MBGeocoder.swift in Sources */,
-				C225132A6CF8B1E963A3850DB66C0B00 /* MBPlacemark.swift in Sources */,
-				250E54634F3F6566E09012FFEC8A8C88 /* MBPlacemarkScope.swift in Sources */,
-				AD76F327C1ACC72A81EB9E708C0CDB22 /* MBRectangularRegion.swift in Sources */,
+				F3AC874536ED458E72CF12A3331DE2F5 /* Pods-PickHacks-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F50FC24BCE33CAFE8531594B0FBBD3A0 /* PBXTargetDependency */ = {
+		AB1BADDF1E9C7A205C9B3269385A016F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MapboxGeocoder.swift;
-			target = DA8C24EFEC268A9EC7EC44A8B76AF92E /* MapboxGeocoder.swift */;
-			targetProxy = F26C7794E0887EC61AD0394E85BA4B58 /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 4CBD2258B55B4FBE2E8A651C23C826C9 /* SnapKit */;
+			targetProxy = B28D01CD958C56362E03FB7492714B08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18858F35143D198F17E4651DB76E3C14 /* Debug */ = {
+		2F4A4BE0470C72A5728088364344342A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */;
+			baseConfigurationReference = 9F328639562F98430C833E598BAC0229 /* SnapKit.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PickHacks/Pods-PickHacks.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SnapKit/SnapKit.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59A483218096A8D67C11E984B2D9649E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F328639562F98430C833E598BAC0229 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SnapKit/SnapKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		37662CC4E9FF05999BA8D9423A4A3EA8 /* Release */ = {
+		967900CD5EBF5C4BECAA7F13502DDEFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE6F5357F779E6D0525D7C4283B70BEF /* Pods-PickHacks.release.xcconfig */;
 			buildSettings = {
@@ -382,57 +514,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		7FAA02948016E61CD85169CD97D5AAF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MapboxGeocoder.swift/MapboxGeocoder.swift-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MapboxGeocoder;
-				PRODUCT_NAME = MapboxGeocoder.swift;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		859DAE0B311F45EF1751ECF3DA76C252 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BD6D7CC6E200DA48BC6798E1215908F /* MapboxGeocoder.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MapboxGeocoder.swift/MapboxGeocoder.swift-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/MapboxGeocoder/MapboxGeocoder.swift.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MapboxGeocoder;
-				PRODUCT_NAME = MapboxGeocoder.swift;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -562,18 +643,32 @@
 			};
 			name = Release;
 		};
+		CAD66362C8BDB5CFD50D268C736E0874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A95DA70C5D089C841A3309D827BBAC /* Pods-PickHacks.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PickHacks/Pods-PickHacks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2629371EC72B3678E4842FCF6414C106 /* Build configuration list for PBXNativeTarget "MapboxGeocoder.swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				859DAE0B311F45EF1751ECF3DA76C252 /* Debug */,
-				7FAA02948016E61CD85169CD97D5AAF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,11 +678,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DB89C815B547E4989608B3466FEAB11 /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */ = {
+		C9CAF245FD15C2271903078AF84C8B1B /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18858F35143D198F17E4651DB76E3C14 /* Debug */,
-				37662CC4E9FF05999BA8D9423A4A3EA8 /* Release */,
+				59A483218096A8D67C11E984B2D9649E /* Debug */,
+				2F4A4BE0470C72A5728088364344342A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C2172A5DECC99CFFE2868C93DEC71F /* Build configuration list for PBXNativeTarget "Pods-PickHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD66362C8BDB5CFD50D268C736E0874 /* Debug */,
+				967900CD5EBF5C4BECAA7F13502DDEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

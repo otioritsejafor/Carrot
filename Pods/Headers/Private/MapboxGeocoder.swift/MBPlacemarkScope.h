@@ -1,1 +1,0 @@
-../../../MapboxGeocoder.swift/MapboxGeocoder/MBPlacemarkScope.h
