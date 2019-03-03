@@ -12,12 +12,32 @@ import SCSDKCreativeKit
 
 class SnapViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        mapView.image = UIImage(imageLiteralResourceName: "Map1")
+        
+        infoContainer.layer.cornerRadius = 10
+        
+//        eventTitle.fon
+    }
+    
+    @IBOutlet weak var mapView: UIImageView!
+    
+    @IBOutlet weak var infoContainer: UIView!
+    
+    @IBOutlet weak var eventTitle: UILabel!
+    
+    @IBOutlet weak var eventTime: UILabel!
+    
+    @IBOutlet weak var eventLocation: UILabel!
+    
+    
     
     @IBAction func shareOnSnap(_ sender: Any) {
         let snapImage = UIImage(imageLiteralResourceName: "Snap")
-        //let snapImage = UIImage(contentsOfFile: )
+      
         let sticker = SCSDKSnapSticker(stickerImage: snapImage)
-        //let snap = SCSDKStickerSnapContent(snapPhoto: sticker)
         
         let snap = SCSDKNoSnapContent()
         snap.sticker = sticker /* Optional */
@@ -30,7 +50,7 @@ class SnapViewController: UIViewController {
         api.startSnapping(completionHandler: { (error: Error?) in
             /* Do something */
             
-            self.imageIndicator.image = snapImage
+            //self.imageIndicator.image = snapImage
             
             
         })
